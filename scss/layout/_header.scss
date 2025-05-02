@@ -1,0 +1,58 @@
+@use "../global" as g;
+
+/*!
+layout > header
+------------------------------
+*/
+.l-header-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.l-header-logo {
+    width: 180px;
+
+    @include g.mq() {
+        width: 320px;
+    }
+}
+
+.l-header-nav {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+.l-header-list {
+    display: flex;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.l-header-list::-webkit-scrollbar {
+    display: none;
+}
+
+.l-header-item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    flex-shrink: 0;
+
+    @include g.mq() {
+        font-size: 14px;
+    }
+}
+
+.l-header-item:not(:last-child):after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 21px;
+    background-color: var(--color-white);
+    margin: 0 16px;
+}

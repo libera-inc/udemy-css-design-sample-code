@@ -1,0 +1,69 @@
+@use "../global" as g;
+
+/*!
+layout > footer
+------------------------------
+*/
+.l-footer {
+    padding-top: 40px;
+    background-color: color-mix(in srgb, var(--color-primary) 10%, transparent);
+}
+
+.l-footer-body {
+    @include g.mq() {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 24px;
+        align-items: end;
+    }
+}
+
+.l-footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.l-footer-logo {
+    max-width: 320px;
+}
+
+.l-footer-description {
+    font-size: 12px;
+}
+
+.l-footer-description span {
+    display: block;
+}
+
+.l-footer-list {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 0;
+
+    @include g.mq() {
+        justify-content: flex-end;
+    }
+}
+
+.l-footer-item {
+    font-size: 12px;
+    display: flex;
+}
+
+.l-footer-item:not(:last-child)::after {
+    content: "/";
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.l-footer-copyright {
+    font-size: 12px;
+    display: block;
+    padding: 16px 0;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    line-height: 1;
+    margin-top: 32px;
+}

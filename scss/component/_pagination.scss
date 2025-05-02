@@ -1,0 +1,48 @@
+/*!
+component > pagination
+------------------------------
+*/
+.c-pagination-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.c-pagination-item > * {
+    width: 35px;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--color-black);
+    font-size: 14px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.is-pagination-active {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.c-pagination-item--prev > *::before,
+.c-pagination-item--next > *::before {
+    content: "";
+    display: block;
+    width: 6px;
+    aspect-ratio: 1/1;
+    border-top: 1px solid var(--color-black);
+    border-right: 1px solid var(--color-black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.c-pagination-item--prev > *::before {
+    rotate: -135deg;
+}
+
+.c-pagination-item--next > *::before {
+    rotate: 45deg;
+}

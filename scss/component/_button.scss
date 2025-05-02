@@ -1,0 +1,18 @@
+/*!
+component > button
+------------------------------
+*/
+.c-button {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-weight: bold;
+    line-height: 1.6;
+    padding: 12px 28px;
+    border-radius: 100vh;
+    display: inline-block;
+}
+
+.c-button--white {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}

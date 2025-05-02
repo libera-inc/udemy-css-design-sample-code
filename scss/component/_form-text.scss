@@ -1,0 +1,24 @@
+/*!
+component > form-text
+------------------------------
+*/
+.c-form-text {
+    border: 1px solid var(--color-border);
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+.c-form-text::placeholder {
+    color: var(--color-black);
+    opacity: 0.3;
+}
+
+.c-form-text:focus {
+    border: 1px solid var(--color-focus);
+}
+
+.c-form-text--textarea {
+    field-sizing: content;
+}

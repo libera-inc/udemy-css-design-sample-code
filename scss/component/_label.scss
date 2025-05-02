@@ -1,0 +1,34 @@
+/*!
+component > label
+------------------------------
+*/
+.c-label {
+    display: inline-block;
+    padding: 6px 16px;
+    line-height: 1;
+    font-size: 12px;
+    border-radius: 100vh;
+    font-weight: bold;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.c-label--html-css {
+    background-color: var(--color-label-html-css);
+}
+
+.c-label--web-production {
+    background-color: var(--color-label-web-production);
+}
+
+.c-label--wordpress {
+    background-color: var(--color-label-wordpress);
+}
+
+.c-label--web-design {
+    background-color: var(--color-label-web-design);
+}
+
+.c-label--javascript {
+    background-color: var(--color-label-javascript);
+}

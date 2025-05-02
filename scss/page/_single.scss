@@ -1,0 +1,125 @@
+@use "../global" as g;
+
+/*!
+page > single
+------------------------------
+*/
+.single-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single-title {
+    margin-top: 8px;
+}
+
+.single-thumbnail {
+    margin-top: 16px;
+
+    @include g.mq() {
+        margin-top: 24px;
+    }
+}
+
+.single-thumbnail img {
+    border-radius: 16px;
+
+    @include g.mq() {
+        border-radius: 20px;
+    }
+}
+
+.single-content {
+    margin-top: 56px;
+
+    @include g.mq() {
+        margin-top: 64px;
+    }
+}
+
+.single-content > * {
+    margin-top: 24px;
+}
+
+.single-content h2 {
+    margin-top: 54px;
+    background-color: var(--color-black);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 8px;
+    line-height: 1.6;
+    color: var(--color-white);
+    border-radius: 8px;
+
+    @include g.mq() {
+        margin-top: 64px;
+        font-size: 20px;
+    }
+}
+
+.single-content h3 {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-primary);
+    padding-bottom: 5px;
+    line-height: 1.6;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+
+    @include g.mq() {
+        font-size: 20px;
+    }
+}
+
+.single-content h3::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 23px;
+    background-image: url(../img/icon-mosha.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    translate: 0 4px;
+}
+
+.single-banner {
+    display: block;
+}
+
+.single-recommend {
+    padding-bottom: 56px;
+
+    @include g.mq() {
+        padding-bottom: 64px;
+    }
+}
+
+.single-recommend-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    @include g.mq() {
+        font-size: 22px;
+    }
+}
+
+.single-recommend-title::before {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 27px;
+    background-image: url(../img/icon-mosha.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

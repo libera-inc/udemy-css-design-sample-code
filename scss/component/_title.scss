@@ -1,0 +1,19 @@
+@use "../global" as g;
+
+/*!
+component > title
+------------------------------
+*/
+.c-title-level1 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+
+    @include g.mq() {
+        font-size: 26px;
+    }
+}
+
+.c-title-level1--center {
+    text-align: center;
+}

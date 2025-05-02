@@ -1,0 +1,27 @@
+/*!
+component > post
+------------------------------
+*/
+.c-post {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.c-post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-post-thumbnail img {
+    border-radius: 16px;
+    aspect-ratio: 324/180;
+    object-fit: cover;
+}
+
+.c-post-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.6;
+}
